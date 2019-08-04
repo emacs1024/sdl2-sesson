@@ -23,7 +23,15 @@ void IBaseDisplay::init( int width, int height, int posX, int posY, Uint32 initF
         return;
     }
 
-    winSurface = SDL_GetWindowSurface(win);
+    if( surfaceAttachToWindow() )
+    {
+        winSurface = SDL_GetWindowSurface(win);
+    }
+}
+
+bool IBaseDisplay::surfaceAttachToWindow()
+{
+    return true;
 }
 
 IBaseDisplay::~IBaseDisplay()

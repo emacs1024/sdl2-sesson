@@ -22,15 +22,19 @@ add_executable(
 
         lesson/L1.h lesson/L1.cc
         lesson/L2.h lesson/L2.cc
+        lesson/L4.h lesson/L4.cc
+        lesson/L5.h lesson/L5.cc
+        lesson/L7.h lesson/L7.cc
+        lesson/L8.h lesson/L8.cc
 
         init.h init.cc
 
         main.cpp
-        lesson/L4.cpp lesson/L4.h)
+        )
 
 target_link_libraries(
         demo
 
         # library
-        SDL2
+        SDL2 SDL2_image
 )

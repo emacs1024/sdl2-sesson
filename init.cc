@@ -7,6 +7,8 @@
 #include "L1.h"
 #include "L2.h"
 #include "L4.h"
+#include "L5.h"
+#include "L8.h"
 
 Init instance[] =
 {
@@ -26,6 +28,18 @@ Init instance[] =
         .index = 4,
         .desc  = "Key Presses",
         .func  = L4::initialize
+    },
+
+    {
+        .index = 5,
+        .desc  = "optimized surface loading and soft stretching",
+        .func  = L5::initialize
+    },
+
+    {
+        .index = 8,
+        .desc  = "geometry rendering",
+        .func  = L8::initialize
     }
 
 };
